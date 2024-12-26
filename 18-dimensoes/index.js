@@ -43,3 +43,11 @@ content.after(
 
 console.log(container[0].getBoundingClientRect());
 console.log(container[1].getBoundingClientRect());
+
+//----------------------------------------------------------------
+
+window.addEventListener("scroll", (e) => {
+  if (window.scrollY > 150) {
+    console.log("Passou de 150px");
+  }
+});

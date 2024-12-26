@@ -77,3 +77,13 @@ botoes[0].addEventListener("click", () => {
 
   div.removeEventListener("click", imprimirConsole);
 });
+
+//--------------------------------------------------------------------------
+
+const paragrafo = document.querySelector(".paragrafo");
+
+paragrafo.addEventListener("mousemove", (e) => {
+  paragrafo.textContent = "Moveu o mouse aqui";
+  console.log(e.x);
+  console.log(e.y);
+});
