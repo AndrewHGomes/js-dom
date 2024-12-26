@@ -5,7 +5,7 @@ mainContent.style.padding = "1em";
 const paragrafos = [];
 let meuParagrafo;
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i <= 6; i++) {
   meuParagrafo = document.createElement("p");
   meuParagrafo.textContent = "Sou Um Elemento";
   paragrafos.push(meuParagrafo);
@@ -26,3 +26,17 @@ mainContent.append(paragrafos[2]);
 // after
 mainContent.after(paragrafos[3]);
 // mainContent.after("Sou um texto simples");
+
+//------------------------------------------------
+
+const header = document.querySelector("header");
+
+header.insertBefore(paragrafos[4], header.children[0]);
+
+//------------------------------------------------
+
+header.appendChild(paragrafos[5]);
+
+//------------------------------------------------
+
+header.replaceChild(paragrafos[6], header.children[1]);

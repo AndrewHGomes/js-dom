@@ -48,3 +48,32 @@ function executar2() {
 botoes[3].addEventListener("click", () => {
   botoes[2].removeEventListener("click", executar2);
 });
+
+//--------------------------------------------------------------------------
+
+const btn = document.createElement("button");
+const div = document.createElement("div");
+div.id = "divLastBtn";
+
+btn.textContent = "Click";
+div.appendChild(btn);
+
+const mainContent = document.querySelector("main");
+
+mainContent.appendChild(div);
+
+function imprimirConsole() {
+  console.log("Clicou na div!!!");
+}
+
+div.addEventListener("click", imprimirConsole);
+btn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  console.log("Clicou no botão");
+});
+
+botoes[0].addEventListener("click", () => {
+  console.log("Removeu o evento da última div!!!");
+
+  div.removeEventListener("click", imprimirConsole);
+});

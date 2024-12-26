@@ -1,11 +1,11 @@
 const keyDown = document.querySelector("#keyDown");
 
-keyDown.onkeydown = () => console.log(keyDown, "Key Down neste input");
+keyDown.onkeydown = (e) => console.log(e.target.value);
 
 const keyUp = document.querySelector("#keyUp");
 
-keyUp.onkeyup = () => console.log(keyUp, "Key Up neste input");
+keyUp.onkeyup = (e) => console.log(e.target.value);
 
 const keyPress = document.querySelector("#keyPress");
 
-keyPress.onkeypress = () => console.log(keyPress, "Key Press neste input");
+keyPress.onkeypress = (e) => console.log(e.target.value);
