@@ -1,22 +1,15 @@
-console.log(window);
+// for (let key in window) {
+//   console.log(window[key]);
+// }
 
-console.log(document);
+// for (let key in document) {
+//   console.log(document[key]);
+// }
 
-console.log(document.documentElement.childNodes);
-console.log(document.documentElement.children);
+// const documento = document.documentElement;
 
-console.log(document.head.childNodes);
-console.log(document.head.children);
+// documento.childNodes.forEach((e) => console.log(e));
 
-console.log(document.body.childNodes);
-console.log(document.body.children);
-
-console.log(
-  `
-    Largura interior: ${window.innerWidth}
-    Altura interior: ${window.innerHeight}
-    URL: ${window.location}
-    `
-);
-
-document.body.childNodes.forEach((e) => console.log(e));
+// for (let key in documento.children) {
+//   console.log(documento.children[key]);
+// }

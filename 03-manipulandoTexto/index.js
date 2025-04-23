@@ -21,6 +21,15 @@ console.log(terceiro.outerHTML);
 
 primeiro.textContent = "Meu Text Content";
 
-segundo.innerText = "Meu Inner Text";
+segundo[0].innerText = "Meu Inner Text";
 
 terceiro.innerHTML = "Meu <strong>Inner HTML</strong>";
+
+//----------------------------------------------------
+
+const texto = document.createTextNode("Eu sou Andrew Gomes");
+const elemento = document.createElement("h3");
+
+elemento.appendChild(texto);
+
+document.body.insertBefore(elemento, document.body.children[2]);
