@@ -1,12 +1,21 @@
-const mouseEnter = () =>
-  (document.querySelector("#mouseEnter").value = "Mouse Entrou");
+function onMouseEnter() {
+  console.log("onmouseenter");
+}
 
-const onChange = () =>
-  (document.querySelector("#onChange").value = "Mudou Valor");
+function onChange() {
+  console.log("onchange");
+}
 
-const onFocus = () => (document.querySelector("#onFocus").value = "Focou Aqui");
+function onFocus() {
+  console.log("onfocus");
+}
 
-const onBlur = () => (document.querySelector("#onBlur").value = "Saiu do Foco");
+function onBlur() {
+  console.log("onblur");
+}
 
-const onClick = () =>
-  (document.querySelector("button").textContent = "Clicou Aqui");
+function onClick() {
+  console.log("onclick");
+}
+
+//==========================================================

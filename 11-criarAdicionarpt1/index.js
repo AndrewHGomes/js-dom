@@ -26,3 +26,18 @@ mainContent.append(paragrafos[2]);
 // after
 mainContent.after(paragrafos[3]);
 // mainContent.after("Sou um texto simples");
+
+//-------------------------------------------------------
+
+function addInput() {
+  const inputs = document.querySelector("#inputs");
+
+  const newInput = document.createElement("input");
+  newInput.setAttribute("type", "text");
+
+  const item = document.createElement("li");
+
+  item.appendChild(newInput);
+
+  inputs.appendChild(item);
+}

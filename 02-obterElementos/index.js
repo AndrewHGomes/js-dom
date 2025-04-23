@@ -15,3 +15,14 @@ console.log(classParagrafo);
 
 const idParagrafo = document.querySelector("#id-paragrafo");
 console.log(idParagrafo);
+
+//===========================================================================
+
+function acao() {
+  paragrafoId.innerText = "getElementById";
+  paragrafoTag[1].innerText = "getElementsTagName";
+  paragrafoClass[0].innerText = "getElementsByClassName";
+  paragrafoName[0].innerText = "getElementsByName";
+  classParagrafo[0].innerText = "querySelectorAll";
+  idParagrafo.innerText = "querySelector";
+}
